@@ -1,4 +1,4 @@
-# columns
+#Kolumny
 import csv
 import random
 
@@ -10,7 +10,6 @@ D1 = {'A': str(random.randint(0,2)),
       'D': str(random.randint(3,5))}
 
 
-lista = [D1]
 
 with open('kolumny.csv','w') as csvfile:
     nazwy = ['A','B','C','D']
@@ -21,5 +20,4 @@ with open('kolumny.csv','w') as csvfile:
 
 with open('kolumny.csv','r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
-    for row in csvreader:
-        print(row[0])
+    
